@@ -1,0 +1,23 @@
+{
+  "name": "aivan-cva.github.io",
+  "version": "1.0.0",
+  "description": "Web Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aivan-cva/aivan-cva.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aivan-cva/aivan-cva.github.io/issues"
+  },
+  "homepage": "https://github.com/aivan-cva/aivan-cva.github.io#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
