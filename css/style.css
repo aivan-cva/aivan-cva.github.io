@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@keyframes moveInLeft {
+  from {
+    opacity: 0;
+    transform: translate(-30rem); }
+  to {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -12,10 +20,11 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6rem; }
+
+body {
   margin: 0rem 15rem;
   display: grid;
-  color: gray;
   grid-template-columns: minmax(20rem, 30rem) 4fr;
   grid-template-rows: repeat(5 1fr);
   grid-gap: 1.5rem;
@@ -27,6 +36,9 @@ body {
   height: 100vh; }
 
 .nav {
+  grid-area: nav;
+  position: fixed;
+  width: 30rem;
   animation: moveInLeft 0.5s ease-out; }
   .nav ul {
     list-style: none; }
@@ -41,32 +53,34 @@ body {
         padding: 1rem;
         text-decoration: none;
         color: black; }
-      .nav ul li .home:hover,
-      .nav ul li .home-active {
+      .nav ul li .home:hover {
         background-color: #164270;
         color: white; }
-      .nav ul li .about:hover,
-      .nav ul li .about-active {
+      .nav ul li .home-active {
+        color: #164270; }
+      .nav ul li .about:hover {
         background-color: #88a516;
         color: white; }
-      .nav ul li .projects:hover,
-      .nav ul li .projects-active {
+      .nav ul li .about-active {
+        color: #88a516; }
+      .nav ul li .projects:hover {
         background-color: #77106b;
         color: white; }
-      .nav ul li .contact:hover,
-      .nav ul li .contact-active {
+      .nav ul li .projects-active {
+        color: #77106b; }
+      .nav ul li .contact:hover {
         background-color: #ac7016;
         color: white; }
+      .nav ul li .contact-active {
+        color: #ac7016; }
       .nav ul li .fas {
         width: 2rem;
         margin: 0 1rem;
         font-size: 1.5rem;
         text-align: center; }
 
-.nav {
-  grid-area: nav;
-  position: fixed;
-  width: 30rem; }
+body {
+  color: gray; }
 
 .home {
   grid-area: home; }
@@ -83,11 +97,3 @@ body {
 .footer {
   grid-area: footer;
   height: 50vh; }
-
-@keyframes moveInLeft {
-  from {
-    opacity: 0;
-    transform: translate(-30rem); }
-  to {
-    opacity: 1;
-    transform: translate(0); } }

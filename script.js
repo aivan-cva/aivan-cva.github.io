@@ -3,24 +3,22 @@ const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll("a");
 
 const options = {
-  threshold: 0.7,
+  threshold: 0.5,
 };
-const navCheck = (entries) => {
+const observeSection = (entries) => {
   entries.forEach((entry) => {
-    const className = entry.target.className.split(" ")[0];
-    const index = entry.target.getAttribute("data-index");
+    const index = entry.target.dataset.index;
+    const navData = entry.target.dataset.nav;
 
     if (entry.isIntersecting) {
-      if (!navItems[index].classList[1]) {
-        navItems[index].classList.add(`${className}-active`);
-      } else {
-        navItems[index].classList.remove(`${className}-active`);
-      }
+      navItems[index].classList.add(`${navData}-active`);
+    } else {
+      navItems[index].classList.remove(`${navData}-active`);
     }
   });
 };
 
-const observer = new IntersectionObserver(navCheck, options);
+const observer = new IntersectionObserver(observeSection, options);
 
 const setObservers = () => {
   sections.forEach((section) => {

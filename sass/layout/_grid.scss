@@ -1,0 +1,13 @@
+body {
+  margin: 0rem 15rem;
+  display: grid;
+  grid-template-columns: minmax(20rem, 30rem) 4fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "nav home"
+    "nav about"
+    "nav projects"
+    "nav contact"
+    "nav footer";
+}
