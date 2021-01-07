@@ -1,36 +1,37 @@
-nav{
+nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+
+  ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    background-color:rgba(0,0,0,0);
 
-    ul{
-        list-style: none;
-        display: flex;
+    li a {
+      text-transform: uppercase;
+      display: block;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
 
-       li a{
-           display: block;
-           padding: 1.5rem;
-           text-decoration: none;
+      &:visited,
+      &:link {
+        color: white;
+      }
 
-           &:visited,
-           &:link{
-               color: white;
-           }
+      &:hover {
+        background-color: rgba(170, 160, 160, 0.425);
+      }
 
-           &:hover{
-               background-color: rgba(170, 160, 160, 0.425);
-           }
-
-           .fas{
-               margin: 0 1rem;
-           }
-       }
+      .fas {
+        margin: 0 0.5rem;
+      }
     }
+  }
 
-    div{
-        align-self: center;
-        justify-self: center;
-    }
+  div {
+    background-color: salmon;
+    flex: 1;
+  }
 }
