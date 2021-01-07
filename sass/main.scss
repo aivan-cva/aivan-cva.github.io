@@ -6,50 +6,5 @@
 @import "base/variables";
 
 @import "layout/grid";
-@import "layout/testing-border";
 
 @import "components/navigation";
-// .color-primary-0 { color: #275789 }	/* Main Primary color */
-// .color-primary-1 { color: #648AB2 }
-// .color-primary-2 { color: #3F6A97 }
-// .color-primary-3 { color: #164270 }
-// .color-primary-4 { color: #072E57 }
-// .color-secondary-1-0 { color: #922184 }	/* Main Secondary color (1) */
-// .color-secondary-1-1 { color: #BB63B0 }
-// .color-secondary-1-2 { color: #A13B95 }
-// .color-secondary-1-3 { color: #77106B }
-// .color-secondary-1-4 { color: #5D0051 }
-// .color-secondary-2-0 { color: #ABCA2E }	/* Main Secondary color (2) */
-// .color-secondary-2-1 { color: #DEF682 }
-// .color-secondary-2-2 { color: #C2DF52 }
-// .color-secondary-2-3 { color: #88A516 }
-// .color-secondary-2-4 { color: #668000 }
-// .color-complement-0 { color: #D3912F }	/* Main Complement color */
-// .color-complement-1 { color: #FFCF86 }
-// .color-complement-2 { color: #E8AE56 }
-// .color-complement-3 { color: #AC7016 }
-// .color-complement-4 { color: #865000 }
-body {
-  color: gray;
-}
-
-.home {
-  grid-area: home;
-}
-
-.about {
-  grid-area: about;
-}
-
-.projects {
-  grid-area: projects;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-.footer {
-  grid-area: footer;
-  height: 50vh;
-}

@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@-webkit-keyframes moveInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-30rem);
+            transform: translate(-30rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-30rem);
+            transform: translate(-30rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -16,149 +41,9 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  margin: 0rem 15rem;
-  display: -ms-grid;
-  display: grid;
-  color: gray;
-  -ms-grid-columns: minmax(20rem, 30rem) 4fr;
-      grid-template-columns: minmax(20rem, 30rem) 4fr;
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5 1fr);
-  grid-gap: 1.5rem;
-      grid-template-areas: "nav home" "nav about" "nav projects" "nav contact" "nav footer";
 }
 
-.bt {
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.466);
-          box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.466);
-  height: 100vh;
-}
-
-.nav {
-  -webkit-animation: moveInLeft 0.5s ease-out;
-          animation: moveInLeft 0.5s ease-out;
-}
-
-.nav ul {
-  list-style: none;
-}
-
-.nav ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  text-transform: uppercase;
-}
-
-.nav ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 1rem;
-  text-decoration: none;
-  color: black;
-}
-
-.nav ul li .home:hover,
-.nav ul li .home-active {
-  background-color: #164270;
-  color: white;
-}
-
-.nav ul li .about:hover,
-.nav ul li .about-active {
-  background-color: #123123;
-  color: white;
-}
-
-.nav ul li .projects:hover,
-.nav ul li .projects-active {
-  background-color: #77106b;
-  color: white;
-}
-
-.nav ul li .contact:hover,
-.nav ul li .contact-active {
-  background-color: #ac7016;
-  color: white;
-}
-
-.nav ul li .fas {
-  width: 2rem;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.nav {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 1;
-  grid-area: nav;
-  position: fixed;
-  width: 30rem;
-}
-
-.home {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: home;
-}
-
-.about {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: about;
-}
-
-.projects {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: projects;
-}
-
-.contact {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: contact;
-}
-
-.footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: footer;
-  height: 50vh;
-}
-
-@-webkit-keyframes moveInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(-30rem);
-            transform: translate(-30rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes moveInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(-30rem);
-            transform: translate(-30rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+nav {
+  background-color: azure;
 }
 /*# sourceMappingURL=main.css.map */

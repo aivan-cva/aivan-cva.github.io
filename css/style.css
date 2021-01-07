@@ -23,63 +23,6 @@ body {
   font-size: 1.6rem; }
 
 body {
-  margin: 0rem 15rem;
-  display: grid;
-  grid-template-columns: minmax(20rem, 30rem) 4fr;
-  grid-template-rows: repeat(5 1fr);
-  grid-gap: 1.5rem;
-  grid-template-areas: "nav home" "nav about" "nav projects" "nav contact" "nav footer"; }
-
-.bt {
-  border-radius: 5px;
-  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.466);
-  height: 100vh; }
-
-.nav {
-  grid-area: nav;
-  position: fixed;
-  width: 30rem;
-  animation: moveInLeft 0.5s ease-out; }
-  .nav ul {
-    list-style: none; }
-    .nav ul li {
-      display: flex;
-      width: 100%;
-      text-transform: uppercase; }
-      .nav ul li a {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 1rem;
-        text-decoration: none;
-        color: black; }
-      .nav ul li .home:hover {
-        background-color: #164270;
-        color: white; }
-      .nav ul li .home-active {
-        color: #164270; }
-      .nav ul li .about:hover {
-        background-color: #88a516;
-        color: white; }
-      .nav ul li .about-active {
-        color: #88a516; }
-      .nav ul li .projects:hover {
-        background-color: #77106b;
-        color: white; }
-      .nav ul li .projects-active {
-        color: #77106b; }
-      .nav ul li .contact:hover {
-        background-color: #ac7016;
-        color: white; }
-      .nav ul li .contact-active {
-        color: #ac7016; }
-      .nav ul li .fas {
-        width: 2rem;
-        margin: 0 1rem;
-        font-size: 1.5rem;
-        text-align: center; }
-
-body {
   color: gray; }
 
 .home {
