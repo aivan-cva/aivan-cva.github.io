@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
+}
+
+.logo {
+  font-family: "Major Mono Display", monospace;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -27,6 +32,24 @@ body {
     opacity: 1;
     -webkit-transform: translate(0);
             transform: translate(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -97,6 +120,7 @@ header {
   background-image: linear-gradient(to bottom right, rgba(50, 50, 53, 0.8), rgba(101, 100, 102, 0.8)), url("../../assets/header-background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,13 +133,21 @@ header {
 }
 
 header .logo {
-  text-transform: uppercase;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   letter-spacing: 2rem;
-  background-color: rgba(41, 41, 41, 0.8);
-  padding: 2rem;
+  padding: 3rem;
   color: whitesmoke;
-  font-size: 5rem;
+  font-size: 21rem;
   font-weight: bolder;
+  -webkit-animation: fadeIn 0.5s ease;
+          animation: fadeIn 0.5s ease;
+}
+
+header .logo span {
+  text-align: center;
 }
 
 .about {

@@ -9,17 +9,24 @@ header {
     url("../../assets/header-background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: top;
   display: flex;
   align-items: center;
   justify-content: center;
 
   .logo {
-    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     letter-spacing: 2rem;
-    background-color: rgba($color: #292929, $alpha: 0.8);
-    padding: 2rem;
+    // background-color: rgba($color: #292929, $alpha: 0.6);
+    padding: 3rem;
     color: whitesmoke;
-    font-size: 5rem;
+    font-size: 21rem;
     font-weight: bolder;
+    animation: fadeIn 0.5s ease;
+
+    span {
+      text-align: center;
+    }
   }
 }
