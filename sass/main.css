@@ -137,8 +137,6 @@ header .logo {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  letter-spacing: 2rem;
-  padding: 3rem;
   color: whitesmoke;
   font-size: 21rem;
   font-weight: bolder;
@@ -148,9 +146,11 @@ header .logo {
 
 header .logo span {
   text-align: center;
+  padding: 2;
 }
 
 .about {
+  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,22 +159,43 @@ header .logo span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #464646;
 }
 
-.about h3 {
-  letter-spacing: 1.2rem;
-  margin: 3rem auto;
+.about .about-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
-.about .about-me {
+.about .about-container h3 {
+  letter-spacing: 1.5rem;
+  margin: 10rem auto;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.about .about-container .about-me {
   width: 50%;
   margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: justify;
+  line-height: 4rem;
+}
+
+.about .about-container .download-cv .download-btn {
+  padding: 3rem;
 }
 
 .about .skills {
   width: 100%;
   background-color: #272727;
-  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,5 +211,9 @@ header .logo span {
 .about .skills .fab {
   font-size: 5rem;
   color: white;
+}
+
+.projects {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

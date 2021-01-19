@@ -17,9 +17,8 @@ header {
   .logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    letter-spacing: 2rem;
     // background-color: rgba($color: #292929, $alpha: 0.6);
-    padding: 3rem;
+
     color: whitesmoke;
     font-size: 21rem;
     font-weight: bolder;
@@ -27,6 +26,7 @@ header {
 
     span {
       text-align: center;
+      padding: 2;
     }
   }
 }
