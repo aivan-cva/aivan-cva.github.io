@@ -1,3 +1,46 @@
 .projects {
-  height: 100vh;
+  height: auto;
+
+  .projects-header {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(50, 50, 53, 0.8),
+        rgba(101, 100, 102, 0.8)
+      ),
+      url("../../assets/projects-bg.jpg");
+    height: 30rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    color: whitesmoke;
+    font-family: "Major Mono Display", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .project {
+    display: flex;
+    margin: 15rem auto;
+    width: 70%;
+    border-radius: 1rem;
+    box-shadow: 1rem 2rem 1rem gray;
+
+    img {
+      width: 30rem;
+    }
+    .curly,
+    .dots {
+      font-family: "Major Mono Display", monospace;
+      font-size: 30rem;
+      color: gray;
+    }
+
+    .project-description {
+      h2 {
+        padding: 3rem 0;
+      }
+    }
+  }
 }
